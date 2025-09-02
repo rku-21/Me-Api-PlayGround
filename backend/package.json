@@ -4,8 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "seed": "node seed.js"
+  "start": "node index.js",
+  "seed": "node seed.js",
+  "build": "echo 'No build step for backend'"
   },
   "dependencies": {
     "cors": "^2.8.5",
