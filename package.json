@@ -4,8 +4,9 @@
   "description": "- **Backend:** Node.js, Express, MongoDB (Mongoose ODM)\r   - REST API for profile, projects, skills, work, and links\r   - Basic authentication for write operations\r   - Logging (morgan), rate limiting, and CORS\r - **Frontend:** React (Vite)\r   - Pages for profile, projects, search, edit\r   - Axios for API calls, modern UI, pagination\r - **Database:** MongoDB Atlas (cloud) or local MongoDB\r   - See `backend/schema.md` for collections and indexes",
   "main": "index.js",
   "scripts": {
-    "build":"npm install --prefix frontend/portfolio && npm install --prefix backend",
-    "start": "npm run start --prefix backend"
+    "build":"npm install --prefix frontend/portfolio",
+    "start": "npm run start --prefix backend",
+    "postinstall": "npm install --prefix backend"
   },
   "keywords": [],
   "author": "",
