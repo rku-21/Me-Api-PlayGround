@@ -1,0 +1,186 @@
+.remove-btn {
+	background: #fff;
+	color: #c0392b;
+	border: 1px solid #c0392b;
+	border-radius: 4px;
+	padding: 0.3rem 1.1rem;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	margin-top: 0.5rem;
+	transition: background 0.2s, color 0.2s;
+}
+.remove-btn:hover {
+	background: #c0392b;
+	color: #fff;
+}
+.edit-btn {
+	background: #fff;
+	color: #3498db;
+	border: 1px solid #3498db;
+	border-radius: 4px;
+	padding: 0.4rem 1.2rem;
+	font-size: 1rem;
+	font-weight: 500;
+	text-decoration: none;
+	transition: background 0.2s, color 0.2s;
+	margin-top: 1rem;
+}
+.edit-btn:hover {
+	background: #3498db;
+	color: #fff;
+}
+
+.profile-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	max-width: 500px;
+	margin: 0 auto;
+}
+.profile-form input {
+	padding: 0.5rem 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+	margin-top: 0.2rem;
+}
+.profile-form label {
+	display: flex;
+	flex-direction: column;
+	font-weight: 500;
+}
+.save-btn {
+	background: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 0.6rem 1.5rem;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	margin-top: 1rem;
+	transition: background 0.2s;
+}
+.save-btn:disabled {
+	background: #b3d3ea;
+	cursor: not-allowed;
+}
+.error-msg {
+	color: #c0392b;
+	margin-top: 0.5rem;
+}
+.success-msg {
+	color: #27ae60;
+	margin-top: 0.5rem;
+}
+.project-edit-block {
+	display: flex;
+	gap: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: #f7f9fb;
+	margin: 0;
+	color: #222;
+}
+
+.navbar {
+	display: flex;
+	gap: 2rem;
+	background: #222;
+	padding: 1rem 2rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 1000;
+	margin-bottom: 0;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.navbar a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.1rem;
+	transition: color 0.2s;
+}
+.navbar a:hover {
+	color: #3498db;
+}
+
+/* Add top padding to .page to avoid overlap with fixed navbar */
+.page {
+	max-width: 700px;
+	margin: 0 auto;
+	background: #fff;
+	padding-top: 5.5rem;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px #0001;
+	padding: 2rem;
+}
+
+.profile-card, .project-card {
+	background: #f9fafb;
+	border-radius: 8px;
+	box-shadow: 0 1px 4px #0001;
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.profile-card h2 {
+	margin-top: 0;
+}
+.skills-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+}
+.skill-badge {
+	background: #3498db22;
+	color: #3498db;
+	border-radius: 4px;
+	padding: 0.2rem 0.7rem;
+	font-size: 0.95rem;
+	font-weight: 500;
+}
+.search-form, .skill-search {
+	display: flex;
+	gap: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+.search-input {
+	flex: 1;
+	padding: 0.5rem 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+.search-btn {
+	background: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 0.5rem 1.2rem;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.search-btn:hover {
+	background: #217dbb;
+}
+.project-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+.project-card h3 {
+	margin-top: 0;
+}
+.project-card ul {
+	margin: 0.5rem 0 0 1.2rem;
+}
+.loader {
+	margin: 2rem auto;
+}
